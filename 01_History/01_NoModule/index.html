@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模块化 - 无模块化的原始时代</title>
+</head>
+<body>
+<h1>模块化 - 无模块化的原始时代</h1>
+</body>
+<script>
+    /** 人类高质量男士-姓名 */
+    let manName = '阿三'
+
+    /** 人类高质量男士-自我介绍 */
+    function manIntro() {
+        console.log('我是人类高质量男士，我叫', manName)
+    }
+
+    /** 拼团名媛-姓名 */
+    let womanName = '阿花'
+
+    /** 拼团名媛-自我介绍 */
+    function womanIntro() {
+        console.log('我是拼团名媛，我叫', womanName);
+    }
+
+    /** 约会 */
+    function dating () {
+        console.log('在无模块化的原始社会')
+        console.log('两人开始约会....')
+
+        manIntro()
+        womanIntro()
+    }
+
+    // 调用约会函数，让两人真正开始约会
+    dating()
+</script>
+</html>
